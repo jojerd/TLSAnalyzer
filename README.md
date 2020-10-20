@@ -3,7 +3,7 @@ Analyze Exchange SSL / TLS Protocols to Ensure Compliance
 
 1.0 Initial Release 10/20/2020
 
-I created this script to test servers that are not internet facing as there are a number of internet hosted services that test for these. However when troubleshooting Exchange OnPrem to Exchange Online connectivity and the firewall is locked down to only accept connections from Exchange Online servers we need a quick way to check enabled protocols. 
+I created this script to test servers that are not internet facing as there are a number of internet hosted services that test for these protocols and cipher suites. However when troubleshooting Exchange OnPrem to Exchange Online connectivity and the firewall is locked down to only accept connections from Exchange Online servers we need a quick way to check enabled protocols. 
 
 The script is used to create a secure channel connection with each protocol to each server that is returned in a given Active Directory Site. 
 It will generate a CSV file of results from each server that is tested detailing the protocols that it was able to utilize in order to make a secure channel connection.
